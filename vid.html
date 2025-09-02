@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Health Awareness Webpage">
+  <meta name="keywords" content="Health, Lungs, Time, Awareness">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Protect Your Lungs</title>
+
+  <style>
+    body {
+      margin: 20px;
+      padding: 20px;
+      border: 5px solid black;
+      text-align: center;
+      background: repeating-linear-gradient(
+        50deg,
+        #A39693,  
+        #A39693 2px,
+        #822919 9px, 
+        #822919 3px  
+      );
+      background-size: 600% 600%;
+      animation: scrollbg 10s linear infinite;
+    }
+
+    @keyframes scrollbg {
+      0% { background-position: 0 0; }
+      100% { background-position: 600px 500px; }
+    }
+
+    h1 {
+      color: #FFFFFF;
+      font-size: 48px;
+      font-weight: bold;	 
+      font-family: "Georgia", serif;   
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .video-box {
+  width: 80%;
+  max-width: 800px;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+	
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -170px;
+      width: 180px;
+      height: 100%;
+      background: #222;
+      transition: left 0.3s ease;
+      padding-top: 60px;
+      z-index: 999;
+    }
+
+    .sidebar::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -30px;
+      width: 30px;
+      height: 100%;
+      background: #4B3235;
+      border-left: 2px solid white;
+      cursor: pointer;
+    }
+
+    .sidebar:hover {
+      left: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      background: #4B3235;
+      color: white;
+      border: 2px solid white;
+      border-radius: 20px;
+      padding: 12px;
+      margin: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .sidebar a:hover {
+      background: #6a484b;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="#">Home</a>
+    <a href="#">Authors Profiles</a>
+    <a href="#">Science Output</a>
+    <a href="#">English Output</a>
+    <a href="#">Reflection Section</a>
+  </div>
+  <h1>Will You</h1>
+  
+  <div class="video-box">
+  <iframe src="https://drive.google.com/file/d/1G7-CeVHYOoITNF2jlJRVzPpOiXKVAgLh/preview"
+          allow="autoplay" frameborder="0"></iframe>
+</div>
+  <h1>Protect Yours?</h1>
+</body>
+</html>
